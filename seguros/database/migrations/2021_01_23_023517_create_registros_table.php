@@ -17,7 +17,7 @@ class CreateRegistrosTable extends Migration
             $table->id();
             $table->string('local_do_acidente',40);
             $table->string('data_do_acidente',20);
-            $table->integer('valor_do_prejuizo');
+            $table->decimal('valor_do_prejuizo',9,2);
             $table->timestamps();
         });
     }
