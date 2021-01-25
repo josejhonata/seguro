@@ -18,9 +18,9 @@ class CreateClientesTable extends Migration
             $table->string('nome',45);
             $table->string('cpf',14);
             $table->string('senha',32);
-            $table->integer('numero_da_carteira');
+            $table->string('numero_da_carteira');
             $table->string('endereço',45);
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 

@@ -18,7 +18,7 @@ class CreateAtendentesTable extends Migration
             $table->string('matricula',10);
             $table->string('senha',15);
             $table->string('nome',45);
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 

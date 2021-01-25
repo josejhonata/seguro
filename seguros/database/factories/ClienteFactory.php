@@ -22,7 +22,11 @@ class ClienteFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nome' => $this->faker->word,
+            'cpf' => $this->faker->word,
+            'senha' => $this->faker->word,
+            'numero_da_carteira' => $this->faker->word,
+            'endereço' => $this->faker->word,
         ];
     }
 }
