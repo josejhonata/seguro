@@ -22,7 +22,9 @@ class RegistroFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'local_do_acidente' => $this->faker->word,
+            'data_do_acidente' => $this->faker->word,
+            'valor_do_prejuizo' => $this->faker->word,
         ];
     }
 }
