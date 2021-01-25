@@ -22,7 +22,10 @@ class CarroFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'placa' => $this->faker->word,
+            'cor' => $this->faker->word,
+            'modelo' => $this->faker->word,
+            'ano' => $this->faker->word,
         ];
     }
 }

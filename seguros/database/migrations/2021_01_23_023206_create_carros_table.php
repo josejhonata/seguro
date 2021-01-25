@@ -18,8 +18,8 @@ class CreateCarrosTable extends Migration
             $table->string('placa',15);
             $table->string('cor',10);
             $table->string('modelo',20);
-            $table->integer('ano');
-            $table->timestamps();
+            $table->string('ano',4);
+            $table->timestamps(); 
         });
     }
 
