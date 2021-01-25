@@ -22,7 +22,9 @@ class AtendenteFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'matricula' => $this->faker->word,
+            'senha' => $this->faker->word,
+            'nome'=> $this->faker->word,
         ];
     }
 }
