@@ -26,6 +26,29 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
+                <!-- Cpf -->
+            <div class="mt-4">
+                <x-label for="cpf" :value="__('Cpf')" />
+
+                <x-input id="cpf" class="block mt-1 w-full" type="text" name="cpf" :value="old('cpf')" required />
+            </div>
+
+                <!-- Numero da carteira -->
+            <div class="mt-4">
+                <x-label for="numero_da_cnh" :value="__('Numero_da_CNH')" />
+
+                <x-input id="numero_da_cnh" class="block mt-1 w-full" type="text" name="numero_da_cnh" :value="old('numero_da_cnh')" required />
+            </div>
+
+                   <!-- Cep -->
+            <div class="mt-4">
+                <x-label for="cep" :value="__('Cep')" />
+
+                <x-input id="cep" class="block mt-1 w-full" type="text" name="cep" :value="old('cep')" required />
+            </div>
+
+
+
             <!-- Password -->
             <div class="mt-4">
                 <x-label for="password" :value="__('Password')" />

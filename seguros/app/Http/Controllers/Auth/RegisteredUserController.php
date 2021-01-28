@@ -36,12 +36,18 @@ class RegisteredUserController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|confirmed|min:8',
+            'cpf' => 'required',
+            'numero_da_cnh'=> 'required',
+            'cep' => 'required'
         ]);
 
         Auth::login($user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'cpf' => $request->cpf,
+            'numero_da_cnh' => $request->numero_da_cnh,
+            'cep' => $request->cep
         ]));
 
         event(new Registered($user));
